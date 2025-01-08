@@ -1,6 +1,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --main-cr: #ef4444;
+  --text-cr: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,7 +17,9 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
+html {
+  font-size: 16px;
+}
 body {
   color: var(--foreground);
   background: var(--background);
@@ -28,13 +32,52 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  transition: all 1s;
 }
-
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  transition: none;
+}
 a {
   color: inherit;
   text-decoration: none;
 }
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+h2 {
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+}
+p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.cont {
+  height: 600px;
+  max-height: max-content;
+  width: 90%;
+  max-width: 1200px;
+  margin: 10% auto;
+  animation-name: pageAn;
+  animation-duration: 2s;
+}
 
+@keyframes pageAn {
+  from {
+    height: 0px;
+    opacity: 0;
+  }
+  to {
+    height: 600px;
+    opacity: 1;
+  }
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
