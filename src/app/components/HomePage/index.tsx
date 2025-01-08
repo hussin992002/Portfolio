@@ -31,7 +31,7 @@ const HomePage = () => {
                 </div>
                 <div className="contactBox">
                     <div className="cv">
-                        <button>Download CV <Image className="img" src={download} alt="Icon" /></button>
+                        <a href="./HussinAshourCv.pdf" download="HussinAshourCV.pdf">Download CV <Image className="img" src={download} alt="Icon"/></a>
                     </div>
                     <div className="contactIcons">
                         <a href="https://github.com/hussin992002" target='blank'><Image className="img" src={gitIcon} alt="Icon" /></a>
