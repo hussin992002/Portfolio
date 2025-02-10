@@ -24,7 +24,7 @@ const Nav = ({ page }: iproob) => {
                 </div>
                 <div className={`links ${span ? 'active' : ""}`}>
                     <a href="." className={page == 'home' ? "active" : ''}>Home</a>
-                    <a href="/About-me" className={page == 'about' ? "active" : ''}>About-me</a>
+                    <a href="/About-me" className={page == 'about' ? "active" : ''}>About</a>
                     <a href="/Resume" className={page == 'resume' ? "active" : ''}>Resume</a>
                     <a href="/Work" className={page == 'work' ? "active" : ''} >Work</a>
                     <a href="/Contact" className={page == 'contact' ? "active" : ''} >Contact</a>

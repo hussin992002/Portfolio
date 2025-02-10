@@ -65,7 +65,7 @@
     cursor: pointer;
 
     span {
-        height: 1px;
+        height: 2px;
         background-color: var(--main-cr);
     }
 
@@ -92,7 +92,10 @@
     .continer p {
         font-size: 1.5rem;
     }
-
+.continer .logo .img{
+    width: 35px;
+    height: 35px;
+}
     .continer .span-links .spans {
         display: flex;
         width: 7%;

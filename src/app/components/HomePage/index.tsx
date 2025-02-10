@@ -8,7 +8,7 @@ import react from "@/app/Svgs/react.svg"
 import node from "@/app/Svgs/node.svg"
 import express from "@/app/Svgs/express.svg"
 import download from "@/app/Svgs/download.svg"
-import imgsrc from '@/app/imgs/me.png'
+import imgsrc from '@/app/imgs/Me-modified (1).png'
 
 const HomePage = () => {
     return (
@@ -31,7 +31,7 @@ const HomePage = () => {
                 </div>
                 <div className="contactBox">
                     <div className="cv">
-                        <a href="./HussinAshourCv.pdf" download="HussinAshourCV.pdf">Download CV <Image className="img" src={download} alt="Icon"/></a>
+                        <a href="./HussinAshourCv.pdf" download="HussinAshourCV.pdf">Download CV <Image className="img" src={download} alt="Icon" /></a>
                     </div>
                     <div className="contactIcons">
                         <a href="https://github.com/hussin992002" target='blank'><Image className="img" src={gitIcon} alt="Icon" /></a>
@@ -43,8 +43,6 @@ const HomePage = () => {
             <div className="image">
                 <div className="imgbox">
                     <Image className="img" src={imgsrc} alt="loading" />
-                    <div className="blacklayout"></div>
-                    <div className="circel"></div>
                 </div>
             </div>
         </div>
